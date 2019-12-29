@@ -8,7 +8,7 @@ import java.util.HashMap;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class TestTree {
+public class TreeTest {
     public static String s;
     public Tree T ;
 

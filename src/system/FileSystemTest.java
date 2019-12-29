@@ -2,9 +2,6 @@ package system;
 
 import org.junit.Before;
 import org.junit.Test;
-import system.FileSystem;
-
-import java.io.File;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.*;
@@ -15,6 +12,8 @@ public class FileSystemTest {
     public String[] named1 = {"root", "dir1"};
     public String[] named2 = {"root", "dir2","dir3","dir4","dir5"};
     public String[] rootname = {"root"};
+    public TreeTest T;
+    public SpaceTest S;
     @Before
     public void BeforeTest(){
     }
@@ -22,7 +21,7 @@ public class FileSystemTest {
     //Tests the names of the FileSystem
     @Test
     public void TestFileSystemName(){
-        TestTree T = new TestTree();
+        T = new TreeTest();
         T.s="q";
         assertTrue(T.StubTestTreeName());
     }
