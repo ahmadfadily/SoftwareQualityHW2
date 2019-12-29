@@ -34,7 +34,13 @@ public class FileSystemTest {
 
     @Test
     public void TestDir(){
-
+        try {
+            FS.dir(named1);
+        } catch (BadFileNameException e) {
+            //do nothing baby
+        }
+        String [] d1=FS.lsdir(rootname);
+        assertEquals("dir1",d1[0]);
     }
 
     @Test
@@ -57,4 +63,25 @@ public class FileSystemTest {
         assertEquals("dir2",d1[0]);
     }
 
+    @Test
+    public void TestDisk(){
+        try {
+            FS.dir(named1);
+        } catch (BadFileNameException e) {
+            //do nothing baby
+        }
+        String [] d1=FS.lsdir(rootname);
+        assertEquals("dir1",d1[0]);
+    }
+
+    @Test
+    public void TestFile(){
+        try {
+            FS.dir(named1);
+        } catch (BadFileNameException e) {
+            //do nothing baby
+        }
+        String [] d1=FS.lsdir(rootname);
+        assertEquals("dir1",d1[0]);
+    }
 }
